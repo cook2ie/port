@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+.header {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.gnb {
+    display: flex;
+    gap: 16px;
+    padding: 4px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #000;
+    box-shadow: 4px 4px 10px 0px rgba(153, 153, 153, 0.25);
+}
+
+.gnb-mo {
+    display: none;
+}
+
+.nav {
+    display: none;
+}
+
+.gnb-inner {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.menu-text {
+    position: relative;
+    white-space: nowrap;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 500;
+    transition: color 0.3s;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.gnb-inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 40px;
+    border-radius: 50px;
+    background: radial-gradient(circle at 50% 50%,
+            rgba(0, 255, 0, 1) 0%,
+            rgba(0, 255, 0, .9) 25%,
+            rgba(0, 255, 0, .8) 50%,
+            rgba(0, 255, 0, .7) 75%,
+            rgba(0, 255, 0, .6) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+}
+
+.gnb-inner:hover::before {
+    opacity: 1;
+}
+
+.gnb-inner:hover .menu-text {
+    color: #000;
+}
+
+.point {
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    top: 11%;
+    left: 16px;
+    display: flex;
+    padding: 0px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 50px;
+    box-shadow: -1px -1px 10px 0px rgba(0, 255, 0, 1) inset;
+}

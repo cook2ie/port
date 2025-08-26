@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+/* 모달 스타일 */
+#modal-web-dong,
+.web-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+#modal-web-dong.active,
+.web-modal.active {
+  display: block;
+}
+
+.web-modal-inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 4px 4px 50px rgba(18, 18, 18, 0.2);
+  overflow: hidden;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.web-modal-top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.web-modal-top p {
+  color: var(--gray1, #121212);
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.69px;
+}
+
+.web-modal-top img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.web-modal-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.web-modal-link {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* swiper2 스타일 */
+.mySwiper2 {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper2 .swiper-wrapper {
+  padding-bottom: 40px;
+}
+
+.mySwiper2 .swiper-slide {
+  width: 400px;
+  height: 600px;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.scrollable-img-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollable-img-wrapper p {
+  color: var(--gray1, #121212);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.69px;
+}
+
+.scrollable-img-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-img-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Swiper pagination */
+.mySwiper2 .swiper-pagination-bullet {
+  background-color: #d8def8;
+  opacity: 0.5;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+  background-color: #d8def8;
+  opacity: 1;
+}
+
+/* poster modal =========================================================*/
+.poster-modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.poster-modal-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 380px;
+}
+
+.poster-modal-left img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 380 / 570;
+}
+
+.poster-modal-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 760px;
+  gap: 16px;
+  width: 100%;
+  max-width: 766.667px;
+}
+
+.poster-modal-right-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+
+.poster-modal-right-top img {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.poster-modal-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  border-radius: 16px;
+  padding: 24px;
+  gap: 16px;
+  flex: 1;
+  min-width: 200px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.poster-modal-desc h3 {
+  color: var(--gray2, #4f4f4f);
+  font-family: Pretendard;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.46px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.poster-modal-desc ul {
+  list-style: disc inside;
+  padding-left: 0;
+  font-family: Pretendard;
+}
+.poster-modal-desc li {
+  font-family: Pretendard;
+  margin-bottom: 8px;
+}
+
+.poster-modal-right-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-modal-right-bottom img {
+  width: 100%;
+  max-width: 767px;
+  aspect-ratio: 767 / 288;
+  border-radius: 16px;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .poster-modal-right-top {
+    height: auto;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .poster-modal-left img,
+  .poster-modal-right-top img,
+  .poster-modal-right-bottom img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .poster-modal-desc {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .poster-modal-right {
+    gap: 12px;
+  }
+
+  .poster-modal-desc h3 {
+    font-size: 16px;
+  }
+
+  .poster-modal-right-top {
+    width: auto;
+  }
+}
+
+/* fashion */
+#modal-poster-fashion .poster-modal-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 300px;
+  gap: 16px;
+  width: auto;
+  max-width: 766.667px;
+  height: 100%;
+}
+#modal-poster-fashion .poster-modal-right-top {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#modal-poster-fashion .poster-modal-right-top img {
+  max-width: 320px;
+}
+/* fashion end */
+/* poster modal end =====================================================*/
+
+/* detail modal =====================================================*/
+#detail-modal-granola,
+#detail-modal-matin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 999;
+  display: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12vh 200px 0;
+  overflow-y: auto;
+  border-radius: 0;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #ecd6e2 0%, #faf3f0 100%), #fff;
+
+  /* display: none; */
+}
+
+#detail-modal-granola.active,
+#detail-modal-matin.active {
+  display: block;
+}
+.detail-modal-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+.modal-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+.modal-close:hover {
+  transform: rotate(90deg);
+}
+/* detail modal end ======================================================*/

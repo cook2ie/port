@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이승재 | publisher Portfolio</title>
+
+    <meta name="robots" content="All">
+    <meta name="Yeti" content="index, follow">
+    <meta name="Yeti" content="All">
+    <meta name="googlebot" content="All">
+    <meta name="googlebot" content="index, follow">
+    <meta name="daumoa" content="All">
+    <meta name="daumoa" content="index, follow">
+    <meta name="title" content="웹디자이너 - 이승재 포트폴리오">
+    <meta name="description" content="웹디자이너 이승재입니다. 포트폴리오 방문을 환영">
+    <meta name="keywords" content="웹디자이너, 웹퍼블리셔, 대구 디자이너">
+    <meta name="author" content="이승재">
+    <meta name="content-language" content="kr">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="seungjae">
+    <meta property="og:title" content="이승재">
+    <meta property="og:description" content="LEESEUNGJAE PORTFOLIO">
+    <meta property="og:image" content="images/git1.jpg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+
+    <!-- favicon -->
+    <link rel="icon" href="SJ.ico" />
+
+    <!-- font -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="https://kit.fontawesome.com/41689f6963.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js" defer></script>
+    <!-- js -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/swiperPoster.js" defer></script>
+    <script src="js/swiperModal.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="gnb">
+                <div class="point"></div>
+                <a class="gnb-inner group" href="#intro">
+                    <h2 class="menu-text">Intro</h2>
+                </a>
+                <a class="gnb-inner group" href="#web">
+                    <h2 class="menu-text">Web</h2>
+                </a>
+                <a class="gnb-inner group" href="#app">
+                    <h2 class="menu-text">App</h2>
+                </a>
+                <a class="gnb-inner group" href="#product">
+                    <h2 class="menu-text">Product</h2>
+                </a>
+                <a class="gnb-inner group" href="#detail">
+                    <h2 class="menu-text">Detail Page</h2>
+                </a>
+                <a class="gnb-inner group" href="#branding">
+                    <h2 class="menu-text">Branding</h2>
+                </a>
+            </div>
+
+            <!-- <button class="mode">
+                <span class="in"></span>
+            </button> -->
+
+            <div class="gnb-mo" aria-label="메뉴 열기">
+                <div class="hamburger"></div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#web">web</a></li>
+                        <li><a href="#app">app</a></li>
+                        <li><a href="#product">product</a></li>
+                        <li><a href="#detail">detail</a></li>
+                        <li><a href="#branding">branding</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section id="intro" class="intro">
+                <div class="line-deco line-deco-left">
+                    <div class="star"></div>
+                </div>
+                <div class="line-deco line-deco-right">
+                    <div class="star"></div>
+                </div>
+                <h1 class="main-title">
+                    <span>W</span><span>E</span><span>B</span>
+                    <br>
+                    <span>P</span><span>U</span><span>B</span><span>L</span><span>I</span><span>S</span><span>H</span><span>E</span><span>R</span>
+                    <br>
+                    <span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>R</span><span>L</span><span>I</span><span>O</span>
+                </h1>
+                <!-- <div class="scroll-indicator">
+                    <p class="scroll-text">scroll down</p>
+                </div> -->
+
+                <div class="visual">
+                    <div class="bg-wrap">
+                        <div class="bg"></div>
+                    </div>
+                    <div id="about" class="about-me">
+                        <div class="about-me-inner">
+                            <div class="about-txt-left">
+                                <div class="about-img">
+                                    <img src="images/profile.png" alt="face" />
+                                </div>
+                                <div class="about-txt-left-txt">
+                                    <p>
+                                        안녕하십니까, 저는 산업 디자인을<br />
+                                        전공한 웹퍼블리셔 & UX/UI 디자이너
+                                        <br>
+                                        이승재입니다.
+                                    </p>
+                                    <!-- <ul class="about-pro">
+                                        <li>seungjae6305@gmailcom</li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                            <div class="about-txt-right">
+                                <div class="about-txt about-edu">
+                                    <p>Education</p>
+                                    <ul>
+                                        <li>
+                                            그린컴퓨터디자인학원<br />(UXUI 반응형
+                                            웹디자인&웹퍼블리셔)
+                                            <span>2025.02 - 2025.08</span>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            영남대학교<br />(산업디자인학과 졸업)
+                                            <span>2018.03 - 2025.08</span>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            성광고등학교
+                                            <span>2015.03 - 2018.02</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 웹 디자인 -->
+            <section id="web" class="web">
+                <div class="web-content">
+                    <div class="web-content-item dong">
+                        <div class="web-content-item-inner">
+                            <div class="web-content-img">
+                                <a href="" target="blank">
+                                    <img src="images/neowiz.jpg" alt="web-1" class="web-img" />
+                                    <!-- <img src="images/neowiz.jpg" alt="eye-icon" class="eye-icon" /> -->
+                                    <p class="eye-icon">click</p>
+                                </a>
+                            </div>
+                            <ul class="tag-list">
+                                <li><a href="" target="_blank">기존 사이트 보기</a></li>
+                                <li><a href="" target="_blank">클론코딩</a></li>
+                            </ul>
+                            <div class="web-content-desc">
+                                <div class="desc">
+                                    <p class="desc-title">
+                                        네오위즈
+                                        <span class="period"># 클론코딩 # 반응형</span>
+                                    </p>
+                                    <span>
+                                        PC 버전의 메인 페이지 슬라이드 및 서브페이지, 모바일
+                                        버전의 메인 페이지 및 서브페이지 디자인부터 퍼블리싱까지
+                                        완료
+                                        <br />
+                                    </span>
+                                </div>
+                                <div class="tool-list">
+                                    <img style="width: 36px; height: 36px" src="images/js.png" alt="figma" />
+                                    <img style="width: 36px; height: 36px" src="images/css.png" alt="js" />
+                                    <img style="width: 36px; height: 36px" src="images/html.png" alt="swiper-icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="web-content-item pj">
+                        <div class="web-content-item-inner">
+                            <div class="web-content-img">
+                                <a href="" target="blank">
+                                    <img src="images/SL.jpg" alt="web-2" class="web-img" />
+                                    <!-- <img src="images/SL.jpg" alt="eye-icon" class="eye-icon" /> -->
+                                    <p class="eye-icon">click</p>
+                                </a>
+                            </div>
+                            <ul class="tag-list">
+                                <li><a href="" target="_blank">기존 사이트 보기</a></li>
+                                <li><a href="" target="_blank">클론코딩</a></li>
+                            </ul>
+                            <div class="web-content-desc">
+                                <div class="desc">
+                                    <p class="desc-title">
+                                        SL(에스엘)
+                                        <span class="period"># 클론코딩 # 반응형</span>
+                                    </p>
+                                    <span>
+                                        전체 구조 분석 및 GSAP 기반 스크롤 애니메이션 구현
+                                        <br />
+                                    </span>
+                                </div>
+                                <div class="tool-list">
+                                    <img style="width: 36px; height: 36px" src="images/js.png" alt="js" />
+                                    <img style="width: 36px; height: 36px" src="images/css.png" alt="swiper-icon" />
+                                    <img style="width: 36px; height: 36px" src="images/html.png" alt="gsap-icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="web-content-item jung">
+                        <div class="web-content-item-inner">
+                            <div class="web-content-img">
+                                <a href="" target="blank">
+                                    <img src="images/skyticket.jpg" alt="web-3" class="web-img" />
+                                    <!-- <img src="img/icon/fluent-emoji-high-contrast_eyes.png" alt="eye-icon"
+                                        class="eye-icon" /> -->
+                                    <p class="eye-icon">click</p>
+                                </a>
+                            </div>
+                            <ul class="tag-list">
+                                <li><a href="" target="_blank">기존 사이트
+                                        보기</a></li>
+                                <li><a href="" target="_blank">리디자인</a></li>
+                                <li><a href="" target="_blank">제작 프로세스</a></li>
+                            </ul>
+                            <div class="web-content-desc">
+                                <div class="desc">
+                                    <p class="desc-title">
+                                        skyticket
+                                        <span class="period">25.07.12 - 25.07.23</span>
+                                    </p>
+                                    <span>
+                                        Figma를 활용해 벤치마킹 기반의 클론코딩과 브랜드에 맞춘
+                                        리디자인을 병행하여 웹사이트를 구현
+                                        <br />
+                                    </span>
+                                </div>
+                                <div class="tool-list">
+                                    <img style="width: 36px; height: 36px" src="images/js.png" alt="figma" />
+                                    <img style="width: 36px; height: 36px" src="images/figma.webp" alt="js" />
+                                    <img style="width: 36px; height: 36px" src="images/css.png" alt="swiper" />
+                                    <img style="width: 36px; height: 36px" src="images/html.png" alt="gsap-icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="web-content-item landing">
+                        <div class="web-content-item-inner">
+                            <div class="web-content-img">
+                                <a href="" target="blank">
+                                    <img src="images/MONO.jpg" alt="web-3" class="web-img" />
+                                    <!-- <img src="img/icon/fluent-emoji-high-contrast_eyes.png" alt="eye-icon"
+                                        class="eye-icon" /> -->
+                                    <p class="eye-icon">click</p>
+                                </a>
+                            </div>
+                            <ul class="tag-list">
+                                <li><a href="" target="_blank">리디자인</a></li>
+                                <li><a href="" target="_blank">제작프로세스</a></li>
+                            </ul>
+                            <div class="web-content-desc">
+                                <div class="desc">
+                                    <p class="desc-title">
+                                        MONO
+                                        <span class="period">25.07.21 - 25.07.22 </span>
+                                    </p>
+                                    <span>
+                                        Figma 디자인 및 퍼블리싱 완료
+                                        <br />
+                                    </span>
+                                </div>
+                                <div class="tool-list">
+                                    <img style="width: 36px; height: 36px" src="images/js.png" alt="figma" />
+                                    <img style="width: 36px; height: 36px" src="images/figma.webp" alt="js" />
+                                    <img style="width: 36px; height: 36px" src="images/css.png" alt="swiper" />
+                                    <img style="width: 36px; height: 36px" src="images/html.png" alt="gsap-icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="web-content-item landing">
+                        <div class="web-content-item-inner">
+                            <div class="web-content-img">
+                                <a href="" target="blank">
+                                    <img src="images/suja.jpg" alt="web-3" class="web-img" />
+                                    <!-- <img src="img/icon/fluent-emoji-high-contrast_eyes.png" alt="eye-icon"
+                                        class="eye-icon" /> -->
+                                    <p class="eye-icon">click</p>
+                                </a>
+                            </div>
+                            <ul class="tag-list">
+                                <li><a href="" target="_blank">기존 사이트 보기</a>
+                                </li>
+                                <li><a href="" target="_blank">클론코딩</a></li>
+                            </ul>
+                            <div class="web-content-desc">
+                                <div class="desc">
+                                    <p class="desc-title">
+                                        한국수자원공사
+                                        <span class="period">25.07.21 - 25.07.22 </span>
+                                    </p>
+                                    <span>
+                                        Figma 디자인 및 퍼블리싱 완료
+                                        <br />
+                                    </span>
+                                </div>
+                                <div class="tool-list">
+                                    <img style="width: 36px; height: 36px" src="images/js.png" alt="js" />
+                                    <img style="width: 36px; height: 36px" src="images/css.png" alt="swiper" />
+                                    <img style="width: 36px; height: 36px" src="images/html.png" alt="gsap-icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="web-content-item landing">
+                        <div class="web-content-item-inner">
+                            <div class="web-content-img">
+                                <a href="" target="blank">
+                                    <img src="images/logi.jpg" alt="web-3" class="web-img" />
+                                    <!-- <img src="img/icon/fluent-emoji-high-contrast_eyes.png" alt="eye-icon"
+                                        class="eye-icon" /> -->
+                                    <p class="eye-icon">click</p>
+                                </a>
+                            </div>
+                            <ul class="tag-list">
+                                <li><a href="" target="_blank">기존사이트 보기</a></li>
+                                <li><a href="" target="_blank">리디자인</a></li>
+                                <li><a href="" target="_blank">피그마</a></li>
+                            </ul>
+                            <div class="web-content-desc">
+                                <div class="desc">
+                                    <p class="desc-title">
+                                        logitech
+                                        <span class="period">25.07.21 - 25.07.22 </span>
+                                    </p>
+                                    <span>
+                                        Figma 디자인 및 퍼블리싱 완료
+                                        <br />
+                                    </span>
+                                </div>
+                                <div class="tool-list">
+                                    <img style="width: 36px; height: 36px" src="images/js.png" alt="figma" />
+                                    <img style="width: 36px; height: 36px" src="images/figma.webp" alt="js" />
+                                    <img style="width: 36px; height: 36px" src="images/css.png" alt="swiper" />
+                                    <img style="width: 36px; height: 36px" src="images/html.png" alt="gsap-icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 앱 디자인 -->
+            <section id="app" class="app">
+                <div class="app-inner page-inner">
+                    <div class="app-left page-left">
+                        <div class="app-left-desc-txt">
+                            <div class="tag-buttons">
+                                <span>협업</span>
+                                <span>앱디자인</span>
+                            </div>
+
+                            <p>HOOM</p>
+
+                            <div class="subtitle">수면 케어 앱</div>
+                            <div class="info">
+                                역할: 로고, 인트로, 수면케어<br />
+                                25.06.27 - 25.07.04
+                            </div>
+
+                            <div class="links">
+                                <a href="" target="_blank">제작 프로세스 보기</a>
+                                <a href="" target="_blank">figma 보기</a>
+                            </div>
+
+                        </div>
+
+                        <div class="app-left-img page-left-img">
+                            <img src="images/HOOM_APP.png" alt="mobile-mokup" />
+                        </div>
+                    </div>
+                    <div class="app-right page-right scroll-container">
+                        <div class="app-main-img scroll-1">
+                            <img src="images/HOOM1.png" alt="app-main-img" />
+                        </div>
+                        <div class="app-sub-img scroll-2">
+                            <img src="images/HOOM2.png" alt="app-home" />
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+
+    <!-- 배너 -->
+    <section id="product" class="product">
+        <div class="poster-inner">
+            <div class="swiper swiperPoster">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide poster-torri-slide">
+                        <img src="images/coca_ins.jpg" alt="Web1" />
+                    </div>
+                    <div class="swiper-slide poster-fashion-slide">
+                        <img src="images/coca_ins.jpg" alt="Web2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/coca_ins.jpg" alt="Web3" />
+                    </div>
+                    <div class="swiper-slide poster-drink-slide">
+                        <img src="images/coca_ins.jpg" alt="Web4" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/coca_ins.jpg" alt="Web5" />
+                    </div>
+                    <div class="swiper-slide poster-torri-slide">
+                        <img src="images/coca_ins.jpg" alt="Web6" />
+                    </div>
+                    <div class="swiper-slide poster-fashion-slide">
+                        <img src="images/coca_ins.jpg" alt="Web7" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/coca_ins.jpg" alt="Web8" />
+                    </div>
+                    <div class="swiper-slide poster-drink-slide">
+                        <img src="images/coca_ins.jpg" alt="Web9" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/coca_ins.jpg" alt="Web10" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 배너 버튼 -->
+            <!-- <div class="swiper-btn">
+                <div class="custom-prev">
+                    <img src="img/icon/arrow-left.png" alt="prev" />
+                </div>
+                <div class="custom-next">
+                    <img src="img/icon/arrow-right.png" alt="next" />
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+    <!-- 상세 페이지 -->
+    <section id="detail" class="detail-page">
+        <div class="detail-page-work-wrap">
+            <div class="detail-page-work-1 detail-page-work">
+                <p>ROLEX<span>상세페이지</span></p>
+                <div class="gra"></div>
+                <img src="images/rolex_full.jpg" alt="gra" />
+            </div>
+            <div class="detail-page-work-2 detail-page-work">
+                <p>DASHU<span>상세페이지</span>
+                </p>
+                <div class="gra"></div>
+                <img src="images/DASHU.jpg" alt="matin" />
+            </div>
+        </div>
+    </section>
+
+    <!-- 브랜딩 -->
+    <section id="branding" class="branding">
+        <div class="branding-inner page-inner">
+            <div class="branding-left page-left">
+                <div class="app-left-desc page-left-desc">
+                    <div class="tag-buttons">
+                        <span>브랜딩 디자인</span>
+                    </div>
+
+                    <div class="app-left-desc-txt page-left-txt">
+                        <p>LYNX</p>
+                        <span class="subtitle">하이엔드 게이밍 기어</span>
+                        <span class="info">
+                            역할: 브랜딩 기획, 로고 디자인
+                            <br />
+                            <span class="period"></span>
+                        </span>
+                    </div>
+
+                    <div class="app-left-desc-bottom page-left-bottom">
+                        <div class="link-list">
+                            <a href="" target="_blank">자세히 보기</a>
+                        </div>
+                        <div class="tool-list">
+                            <img style="width: 36px; height: 36px" src="images/il.png" alt="ai-icon" />
+                            <img style="width: 36px; height: 36px" src="images/pt.png" alt="ps-icon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="branding-left-img page-left-img">
+                    <img src="images/lynx_logo.png" alt="detail-page-img" />
+                </div>
+            </div>
+
+            <div class="branding-right page-right">
+                <div class="branding-img">
+                    <img src="images/lynx.jpg" alt="branding" />
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- footer 푸터 -->
+
+    <footer class="footer">
+        <h1 class="main-title">
+            <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+            <span>M</span><span>E</span>
+        </h1>
+
+        <div class="contact-info">
+            <div>
+                <p>
+                    항상 성실하게 또, 꼼꼼하게 작업에 임하겠습니다.
+                </p>
+            </div>
+            <div>
+                <p><strong>이승재</strong> | Web Design & Publisher</p>
+            </div>
+            <div>
+                <p>Email: seungjae6305@naver.com</p>
+            </div>
+            <div>
+                <p>
+                    <a>GitHub</a>
+                    <a>Notion Portfolio</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+</body>
+
+</html>

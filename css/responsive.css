@@ -1,0 +1,258 @@
+@media screen and (max-width: 768px) {
+    body.noscroll {
+        overflow: hidden;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0);
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .gnb-mo {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        padding-top: 4vw;
+        display: block;
+    }
+
+    .gnb-mo ul {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4vw;
+        z-index: 2;
+    }
+
+    .gnb-mo .hamburger {
+        position: fixed;
+        top: 4vw;
+        right: 4vw;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .gnb-mo .hamburger::after {
+        content: "";
+        width: 24px;
+        height: 1px;
+        background-color: var(--gray3);
+        position: absolute;
+        top: 3vw;
+        right: 1vw;
+    }
+
+    .gnb-mo.openmenu .hamburger::after {
+        transform: rotate(45deg) translateY(5px);
+        width: 24px;
+        transition: all 0.4s ease;
+    }
+
+    .gnb-mo.openmenu .hamburger::before {
+        width: 24px;
+        transform: rotate(-45deg) translateY(-5px);
+        transition: all 0.4s ease;
+    }
+
+    .gnb-mo .hamburger::before {
+        content: "";
+        width: 24px;
+        height: 1px;
+        background-color: var(--gray3);
+        position: absolute;
+        top: 5vw;
+        right: 1vw;
+    }
+
+    .gnb-mo.openmenu .nav {
+        display: block;
+    }
+
+    .gnb-mo .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+
+        display: none;
+    }
+
+    .nav ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 16vw 8vw;
+        display: flex;
+    }
+
+    .nav ul li {
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid var(--gray4);
+    }
+
+    .nav ul li:last-child {
+        border-bottom: 0;
+    }
+
+    .nav ul a {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .about-txt-right {
+        width: 100%;
+        padding: 0 5vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-me-inner {
+        display: block;
+    }
+
+    .about-txt-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        padding: 2vh 0;
+    }
+
+    .about-txt-left-txt {
+        padding-bottom: 1vw;
+    }
+
+    .about-txt-right {
+        width: 100%;
+        padding: 5vh 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-img {
+        width: 20vw;
+        height: auto;
+    }
+
+    .about-txt-left {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .about-txt-right {
+        padding-top: 4vw;
+    }
+
+    .about-me li {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-txt-right div {
+        display: block;
+    }
+
+    .about-txt-right div p {
+        padding-bottom: 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .web {
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .web {
+        padding: 0 10.24vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .web {
+        padding: 0 10.24vw;
+    }
+
+    .swiperPoster .swiper-slide img {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .branding-right {
+        display: none;
+    }
+
+    .web-content {
+        padding: 0 0;
+    }
+
+    .detail-page-right {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .web-content {
+        grid-template-columns: repeat(2, minmax(340px, 1fr));
+    }
+}
+
+@media (max-width: 800px) {
+    .web-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .web-content-item {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (hover: none) {
+    .web-content-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .web-content-item:hover .eye-icon,
+    .web-content-item:hover p.eye-icon {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

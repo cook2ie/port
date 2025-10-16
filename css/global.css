@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 스크롤바 전체 영역 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(253, 253, 253, 0.5);
+}
+
+/* 스크롤바 썸 (움직이는 부분) */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 255, 0, 1);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #EFEFEF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #000;
+  color: var(--gray1);
+  word-break: keep-all;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Pretendard-Regular";
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  color: var(--gray3);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgba(0, 255, 0, 1);
+  text-decoration: none;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}

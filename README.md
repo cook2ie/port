@@ -1,4 +1,4 @@
-<img width="3400" height="1589" alt="main png" src="https://github.com/user-attachments/assets/7c5736c5-fc90-4997-ae35-454215a6ee0d" /># 💻 Portfolio Website
+# 💻 Portfolio Website
 
 개인 포트폴리오 웹사이트입니다.  
 UI/UX 설계부터 퍼블리싱까지 직접 작업했습니다.
@@ -25,5 +25,6 @@ UI/UX 설계부터 퍼블리싱까지 직접 작업했습니다.
 ---
 
 ## 📸 Preview
+![preview](main.png)
 ![preview]<img width="3400" height="1589" alt="main png" src="https://github.com/user-attachments/assets/50e452b4-1aee-4afd-88ce-49f25c788eab" />
 

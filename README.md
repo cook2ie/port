@@ -6,7 +6,7 @@ UI/UX 설계부터 퍼블리싱까지 직접 작업했습니다.
 ---
 
 ## 🔗 Live Site
-👉 https://cook2ie.github.io/port/
+👉 [(이승재 포트폴리오 바로가기)](https://cook2ie.github.io/port/)
 
 실제 포트폴리오 용도로 제작된 프로젝트입니다.
 
